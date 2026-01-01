@@ -33,7 +33,7 @@ body.dark-mode a:hover {
     color: #ff6666;
 }
 
-body.dark-mode code:not(.label, .function, .type, .class, .law) {
+body.dark-mode :not(pre) > code:not(.label, .function, .type, .class, .law) {
     background-color: #2d2d2d;
     color: #e0e0e0;
 }
@@ -83,6 +83,7 @@ body.dark-mode .errata {
     position: fixed;
     top: 40px;
     right: 20px;
+    /* Using z-index 10000 to match the Ukraine banner and ensure visibility */
     z-index: 10000;
     background-color: #333;
     color: white;
