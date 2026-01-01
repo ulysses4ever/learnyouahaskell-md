@@ -41,11 +41,13 @@
     
     function updateButtonIcon(button) {
         if (document.body.classList.contains('dark-mode')) {
-            button.innerHTML = '☀️';
+            button.textContent = '☀️';
             button.setAttribute('title', 'Switch to light mode');
+            button.setAttribute('aria-label', 'Switch to light mode');
         } else {
-            button.innerHTML = '🌙';
+            button.textContent = '🌙';
             button.setAttribute('title', 'Switch to dark mode');
+            button.setAttribute('aria-label', 'Switch to dark mode');
         }
     }
     
