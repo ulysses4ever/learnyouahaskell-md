@@ -45,6 +45,7 @@ body.dark-mode pre > code {
 
 body.dark-mode .hintbox {
     background-color: #2d2d1a;
+    background-image: none !important;
     color: #f0f0f0;
     border: 1px solid #5a5a3a;
 }
@@ -148,11 +149,11 @@ body.dark-mode .newsplash a.nostarchlink:hover {
 
 /* Handle image backgrounds in dark mode */
 body.dark-mode img {
+    opacity: 0.9;
     background-color: transparent;
-    mix-blend-mode: multiply;
 }
 
-/* For images that should keep their background */
-body.dark-mode img.no-blend {
-    mix-blend-mode: normal;
+/* Keep images at full opacity when needed */
+body.dark-mode img.full-opacity {
+    opacity: 1;
 }
